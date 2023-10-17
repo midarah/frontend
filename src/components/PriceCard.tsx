@@ -30,43 +30,53 @@ const PriceCard: React.FC<IPriceCardProps> = ({
 	}, [token]);
 
 	const dynamicDescription = () => {
-		if (price.nickname === "BASIC") {
+		if (price.nickname === "ERO SOLDIER") {
 			return "✓ 1 mês de acesso";
-		} else if (price.nickname === "STANDARD") {
+		} else if (price.nickname === "HENTAI HERO") {
 			return "✓ 6 meses de Acesso";
-		} else if (price.nickname === "PREMIUM") {
+		} else if (price.nickname === "MIDARA KING") {
 			return "✓ 1 ano de Acesso";
 		}
 	};
 
 	const dynamicDescription2 = () => {
-		if (price.nickname === "BASIC") {
+		if (price.nickname === "ERO SOLDIER") {
 			return "✓ Acesso total";
-		} else if (price.nickname === "STANDARD") {
+		} else if (price.nickname === "HENTAI HERO") {
 			return "✓ Acesso total";
-		} else if (price.nickname === "PREMIUM") {
+		} else if (price.nickname === "MIDARA KING") {
 			return "✓ Acesso total";
 		}
 	};
 
 	const dynamicDescription3 = () => {
-		if (price.nickname === "BASIC") {
+		if (price.nickname === "ERO SOLDIER") {
 			return "✗ Recomendação de hentai";
-		} else if (price.nickname === "STANDARD") {
+		} else if (price.nickname === "HENTAI HERO") {
 			return "✓ Recomendação de hentai";
-		} else if (price.nickname === "PREMIUM") {
+		} else if (price.nickname === "MIDARA KING") {
 			return "✓ Recomendação de hentai";
 		}
 	};
 
+	const dynamicDescription4 = () => {
+		if (price.nickname === "ERO SOLDIER") {
+			return "mês";
+		} else if (price.nickname === "HENTAI HERO") {
+			return "semestre";
+		} else if (price.nickname === "MIDARA KING") {
+			return "ano";
+		}
+	};
+
 	function cardStyle() {
-		return price.nickname === "STANDARD"
+		return price.nickname === "HENTAI HERO"
 			? "drop-shadow-md bg-pink-700 border-4 border-blue-700"
 			: "card drop-shadow-md bg-blue-500 text-white rounded-lg py-4 px-2";
 	}
 
 	function buttonStyle() {
-		return price.nickname === "STANDARD"
+		return price.nickname === "HENTAI HERO"
 			? "bg-blue-800 transition-all ease-out duration-200 hover:bg-blue-500"
 			: "bg-pink-700 hover:bg-pink-600";
 	}
@@ -86,7 +96,7 @@ const PriceCard: React.FC<IPriceCardProps> = ({
 							style: "currency",
 							currency: "BRL",
 						})}
-						/mês
+						/{dynamicDescription4()}
 					</h1>
 					<ul className="list-none mt-3 mb-4">
 						<li className="">

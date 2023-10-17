@@ -13,7 +13,7 @@ import { Spinner } from "@/components/Spinner";
 
 function HomePage() {
 	const [hentais, setHentais] = useState([]);
-	const [displayedItems, setDisplayedItems] = useState(4);
+	const [displayedItems, setDisplayedItems] = useState(20);
 	const [loading, setLoading] = useState(true);
 	// const alertShown = localStorage.getItem("alertShown");
 
@@ -36,7 +36,7 @@ function HomePage() {
 	}, []);
 
 	const handleLoadMore = () => {
-		const newDisplayCount = displayedItems + 4;
+		const newDisplayCount = displayedItems + 8;
 		setDisplayedItems(newDisplayCount);
 	};
 

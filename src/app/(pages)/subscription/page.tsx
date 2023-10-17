@@ -1,9 +1,6 @@
 "use client";
 
-import styles from "./profile.module.css";
-
 import React, { useEffect, useState, useContext } from "react";
-import { useRouter } from "next/navigation";
 import api from "@/utils/api";
 
 // Components
