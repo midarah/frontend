@@ -95,7 +95,7 @@ function HomePage() {
 
 								return (
 									<div
-										className="flex flex-col"
+										className="flex flex-col mb-2"
 										key={hentai._id}>
 										<div className="flag bg-blue-800 hover:bg-blue-600 opacity-85 transition-all ease-in duration-200 text-white text-center font-bold p-2 absolute rounded-lg z-40 flex items-center">
 											MH
