@@ -25,11 +25,6 @@ function MangakasPage() {
 	const router = useRouter();
 
 	useEffect(() => {
-		if (!token) {
-			router.push("/login");
-			return;
-		}
-
 		const fetchData = async () => {
 			await api.get("/mangakas").then((response) => {
 				setMangakas(response.data.mangakas);

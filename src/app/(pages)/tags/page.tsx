@@ -19,11 +19,6 @@ function TagsPage() {
 	const router = useRouter();
 
 	useEffect(() => {
-		if (!token) {
-			router.push("/login");
-			return;
-		}
-
 		const fetchData = async () => {
 			await api.get("/tags").then((response) => {
 				setTags(response.data.tags);
