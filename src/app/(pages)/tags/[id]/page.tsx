@@ -9,9 +9,6 @@ import Image from "next/image";
 // React Icons
 import { RiPenNibFill, RiBook2Fill } from "react-icons/ri";
 
-// Hooks
-import useFlashMessage from "@/hooks/useFlashMessage";
-
 // Components
 import { Spinner } from "@/components/Spinner";
 

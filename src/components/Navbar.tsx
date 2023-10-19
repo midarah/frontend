@@ -159,6 +159,22 @@ function Navbar() {
 								</Link>
 							</li>
 
+							<li>
+								<Link
+									className="flex flex-row items-center hover:text-blue-300 transition-all ease-in duration-200 gap-1"
+									href="/tags">
+									<IoPricetagsSharp size={15} /> Tags
+								</Link>
+							</li>
+
+							<li>
+								<Link
+									className="flex flex-row items-center hover:text-blue-300 transition-all ease-in duration-200 gap-1"
+									href="/mangakas">
+									<RiPenNibFill /> Mangakas
+								</Link>
+							</li>
+
 							<li>|</li>
 
 							<li>

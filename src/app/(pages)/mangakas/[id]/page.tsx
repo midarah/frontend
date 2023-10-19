@@ -12,9 +12,6 @@ import { useRouter } from "next/navigation";
 import { RiBook2Fill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
 
-// Hooks
-import useFlashMessage from "@/hooks/useFlashMessage";
-
 // Components
 import { Spinner } from "@/components/Spinner";
 
@@ -38,26 +35,23 @@ function MangakaDetails() {
 	const { id } = useParams();
 	const [mangaka, setMangaka] = useState<IMangaka | null>(null);
 	const [hentais, setHentais] = useState<IHentai[]>([]);
-	const { setFlashMessage } = useFlashMessage();
 	const [token] = useState(localStorage.getItem("token") || "");
 	const [isLoading, setIsLoading] = useState(true); // Add a loading state
 
 	const router = useRouter();
 
 	useEffect(() => {
-		if (!token) {
-			router.push("/login");
-			return;
-		}
+		const fetchData = async () => {
+			await api.get(`/mangakas/${id}`).then((response) => {
+				setMangaka(response.data.mangaka);
+			});
 
-		api.get(`/mangakas/${id}`).then((response) => {
-			setMangaka(response.data.mangaka);
-		});
-
-		api.get(`/hentais`).then((response) => {
-			setHentais(response.data.hentais);
+			await api.get(`/hentais`).then((response) => {
+				setHentais(response.data.hentais);
+			});
 			setIsLoading(false);
-		});
+		};
+		fetchData();
 	}, [id, token, router]);
 
 	if (isLoading || !mangaka || hentais.length === 0) {
