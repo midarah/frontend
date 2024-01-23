@@ -8,8 +8,6 @@ import api from "@/utils/api";
 import Image from "next/image";
 import Banner from "../../public/banner-midara.jpg";
 
-import styles from "./home.module.css";
-
 // Components
 import { Spinner } from "@/components/Spinner";
 
@@ -70,7 +68,7 @@ function HomePage() {
 			<section className="min-h-screen flex flex-col items-center mt-8 mb-16">
 				<a
 					href="#"
-					className={`bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 shadow-xl ${styles.btn}`}></a>
+					className={`btn bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 shadow-xl`}></a>
 				<div className="mb-8">
 					<Image
 						className="rounded-xl shadow-xl"
