@@ -33,6 +33,7 @@ function TagsPage() {
 	interface ITag {
 		_id: string;
 		tagName: string;
+		image: string;
 		definition: string;
 		updatedAt: string; // Adicione a data de atualização
 	}
@@ -81,7 +82,7 @@ function TagsPage() {
 
 					<div className="col-start-2 col-span-8 flex flex-row justify-center mt-6 mb-6 gap-8 overflow-visible">
 						<div className="breakLine flex flex-row justify-center gap-4 static">
-							{tags.slice(0, displayedItems).map((tag) => (
+							{sortedTags.slice(0, displayedItems).map((tag) => (
 								<div className="flex flex-col" key={tag._id}>
 									<div className="mb-2">
 										<Image
@@ -100,7 +101,6 @@ function TagsPage() {
 											</p>
 										</h3>
 									</div>
-
 									<Link
 										className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white text-center p-2 rounded px-14 w-64 shadow-lg"
 										href={`/tags/${tag._id}`}>
