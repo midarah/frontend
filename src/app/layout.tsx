@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import Link from "next/link";
 // import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
@@ -30,8 +31,8 @@ export default function RootLayout({ children }: IPropsChildren) {
 	return (
 		<html lang="pt-BR">
 			<head>
-				<link rel="icon" href="/favicon.png" type="image/png" />
-				<link
+				<Link rel="icon" href="/favicon.png" type="image/png" />
+				<Link
 					href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
 					rel="stylesheet"
 					type="text/css"
