@@ -50,16 +50,16 @@ function Login() {
 					text="Email"
 					type="email"
 					name="email"
-					placeholder="Digite seu email"
+					placeholder="Type your email"
 					handleOnChange={handleChange}
 					value={user.email}
 					multiple={false}
 				/>
 				<Input
-					text="Senha"
+					text="Password"
 					type="password"
 					name="password"
-					placeholder="Digite sua senha"
+					placeholder="Type your password"
 					handleOnChange={handleChange}
 					value={user.password}
 					multiple={false}
@@ -72,7 +72,7 @@ function Login() {
 							Loading...
 						</>
 					) : (
-						<>Entrar</>
+						<>Login</>
 					)}
 				</button>
 
@@ -84,11 +84,11 @@ function Login() {
 			</form>
 
 			<span className="mt-2">
-				Ainda não tem uma conta?{" "}
+				Not have an account yet?{" "}
 				<Link
 					className="text-blue-500 hover:text-blue-800 dark:text-blue-600 dark:hover:text-blue-400 transition-all ease-in duration-200 font-bold"
 					href="/register">
-					Cadastre-se
+					Sign Up
 				</Link>
 			</span>
 

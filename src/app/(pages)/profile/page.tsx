@@ -175,7 +175,7 @@ function Profile() {
 			) : (
 				<div className="flex flex-col gap-8">
 					<h1 className="bg-pink-800 text-center text-2xl py-2 shadow-xl rounded">
-						Meu Perfil
+						My Profile
 					</h1>
 					<div className="w-full flex flex-row gap-8">
 						<form
@@ -204,7 +204,7 @@ function Profile() {
 									</div>
 								) : (
 									<div className="flex justify-center items-center">
-										<span>Enviar Arquivo</span>
+										<span>Send File</span>
 										<input
 											className={styles.file}
 											type="file"
@@ -225,7 +225,7 @@ function Profile() {
 									value={user ? user.email : ""}
 								/>
 								<Input
-									text="Nome"
+									text="Name"
 									type="text"
 									name="name"
 									placeholder="Digite o nome"
@@ -236,14 +236,14 @@ function Profile() {
 
 							<div>
 								<Input
-									text="Senha"
+									text="Password"
 									type="password"
 									name="password"
 									placeholder="Digite a sua senha"
 									handleOnChange={handleChange}
 								/>
 								<Input
-									text="Confirmação de senha"
+									text="Password Confirmation"
 									type="password"
 									name="confirmPassword"
 									placeholder="Confirme a sua senha"
@@ -252,7 +252,7 @@ function Profile() {
 							</div>
 							<article>
 								<button className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white p-2 rounded px-14 w-64 shadow-lg">
-									{loading ? "Processando..." : "Atualizar"}
+									{loading ? "Processing..." : "Update"}
 								</button>
 							</article>
 							{/* <pre>{JSON.stringify(subscription, null, 4)}</pre> */}
@@ -263,10 +263,10 @@ function Profile() {
 									<div key={sub.id}>
 										<section>
 											<h4 className="font-bold">
-												Plano: {sub.plan.nickname}
+												Plan: {sub.plan.nickname}
 											</h4>
 											<h5>
-												Mensalidade:{" "}
+												Monthly Payment:{" "}
 												{(
 													sub.plan.amount / 100
 												).toLocaleString("pt-BR", {
@@ -279,14 +279,14 @@ function Profile() {
 												{traduzirStatus(sub.status)}
 											</p>
 											<p>
-												Cartão terminado em: ••••{" "}
+												Card ended in: ••••{" "}
 												{
 													sub.default_payment_method
 														.card.last4
 												}
 											</p>
 											<p className="mb-4">
-												Seu plano expira em:{" "}
+												Your plan expires in:{" "}
 												{moment(
 													sub.current_period_end *
 														1000
@@ -297,15 +297,13 @@ function Profile() {
 											<button
 												onClick={manageSubscription}
 												className="bg-green-700 hover:bg-green-600 transition-all ease-in duration-200 text-white rounded w-full px-5 py-2">
-												Gerenciar Assinatura
+												Manage Subscription
 											</button>
 										</section>
 									</div>
 								))
 							) : (
-								<div>
-									Sem informações de assinatura disponíveis
-								</div>
+								<div>No subscription information available</div>
 							)}
 						</div>
 					</div>

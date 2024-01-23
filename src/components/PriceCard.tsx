@@ -31,41 +31,41 @@ const PriceCard: React.FC<IPriceCardProps> = ({
 
 	const dynamicDescription = () => {
 		if (price.nickname === "ERO SOLDIER") {
-			return "✓ 1 mês de acesso";
+			return "✓ 1 month of access";
 		} else if (price.nickname === "HENTAI HERO") {
-			return "✓ 6 meses de Acesso";
+			return "✓ 6 months of Access";
 		} else if (price.nickname === "MIDARA KING") {
-			return "✓ 1 ano de Acesso";
+			return "✓ 1 year of Access";
 		}
 	};
 
 	const dynamicDescription2 = () => {
 		if (price.nickname === "ERO SOLDIER") {
-			return "✓ Acesso total";
+			return "✓ Full access";
 		} else if (price.nickname === "HENTAI HERO") {
-			return "✓ Acesso total";
+			return "✓ Full access";
 		} else if (price.nickname === "MIDARA KING") {
-			return "✓ Acesso total";
+			return "✓ Full access";
 		}
 	};
 
 	const dynamicDescription3 = () => {
 		if (price.nickname === "ERO SOLDIER") {
-			return "✗ Recomendação de hentai";
+			return "✗ Recommendations";
 		} else if (price.nickname === "HENTAI HERO") {
-			return "✓ Recomendação de hentai";
+			return "✓ Recommendations";
 		} else if (price.nickname === "MIDARA KING") {
-			return "✓ Recomendação de hentai";
+			return "✓ Recommendations";
 		}
 	};
 
 	const dynamicDescription4 = () => {
 		if (price.nickname === "ERO SOLDIER") {
-			return "mês";
+			return "month";
 		} else if (price.nickname === "HENTAI HERO") {
-			return "semestre";
+			return "semester";
 		} else if (price.nickname === "MIDARA KING") {
-			return "ano";
+			return "year";
 		}
 	};
 
@@ -94,7 +94,7 @@ const PriceCard: React.FC<IPriceCardProps> = ({
 					<h1 className="card-title pricing-card-name font-bold text-3xl flex justify-center">
 						{(price.unit_amount / 100).toLocaleString("pt-BR", {
 							style: "currency",
-							currency: "BRL",
+							currency: "USD",
 						})}
 						/{dynamicDescription4()}
 					</h1>
@@ -119,7 +119,7 @@ const PriceCard: React.FC<IPriceCardProps> = ({
 					<button
 						onClick={(evt) => handleSubscription(evt, price)}
 						className={`text-white duration-200 px-20 py-4 rounded-md ${buttonStyle()}`}>
-						Assinar
+						Subscribe
 					</button>
 				</div>
 			</div>

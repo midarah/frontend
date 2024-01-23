@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 // Components
 import { Navbar } from "../components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Metadata } from "../components/Metadata";
 
 // Context
 import { UserProvider } from "@/context/UserContext";
@@ -39,6 +40,10 @@ export default function RootLayout({ children }: IPropsChildren) {
 			<body className={poppins.className}>
 				<ThemeProvider enableSystem={true} attribute="class">
 					<UserProvider>
+						<Metadata
+							title="Midara Hentai"
+							description="Descrição global"
+						/>
 						<Navbar />
 						<Toaster
 							position="bottom-center"

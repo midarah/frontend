@@ -130,15 +130,15 @@ function Chapter() {
 					/>
 				</div>
 				<h1 className="text-2xl mb-2">
-					Você não tem uma assinatura ativa para acessar esta página.
+					You do not have an active subscription to access this page.
 				</h1>
 				<p className="mb-2">
-					Torne-se premium para ter acesso a 100% do conteúdo!
+					Become premium to have access to 100% of the content!
 				</p>
 				<Link
-					className="bg-blue-800 hover-bg-blue-500 text-white transition-all ease-in duration-200 mt-4 py-2 px-4 rounded"
+					className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 drop-shadow-md mt-4 py-2 px-4 rounded"
 					href="/subscription">
-					Assinar Plano Premium
+					Subscribe to Premium Plan
 				</Link>
 			</section>
 		);
@@ -176,8 +176,8 @@ function Chapter() {
 								))
 							) : (
 								<p>
-									Não há imagens disponíveis para este
-									capítulo.
+									There are no images available for this
+									chapter.
 								</p>
 							)}
 						</div>
@@ -195,7 +195,7 @@ function Chapter() {
 							hentai?.chapters[currentChapterIndex - 1]._id
 						}`}>
 						<BsChevronLeft size={20} />
-						Capítulo Anterior
+						Previous Chapter
 					</Link>
 				)}
 				{currentChapterIndex < hentai.chapters.length - 1 && (
@@ -204,7 +204,7 @@ function Chapter() {
 						href={`/chapter/${
 							hentai?.chapters[currentChapterIndex + 1]._id
 						}`}>
-						Próximo Capítulo
+						Next Chapter
 						<BsChevronRight size={20} />
 					</Link>
 				)}

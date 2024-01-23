@@ -12,7 +12,7 @@ function Footer() {
 			<footer className="bg-pink-900 py-4">
 				<section className="flex flex-col">
 					<div className="flex flex-col items-center mb-4">
-						<h1 className="text-2xl font-bold">PARCEIROS:</h1>
+						<h1 className="text-2xl font-bold">PARTNERS:</h1>
 
 						<div className="flex flex-row justify-center items-center mt-2 gap-4">
 							<Link
@@ -40,13 +40,13 @@ function Footer() {
 
 					<div className="flex flex-col justify-center text-center">
 						<h2>
-							Todos os direitos dos Mangás são reservados aos
-							artistas!
+							All rights to the Mangas are reserved to the
+							artists!
 						</h2>
 						<div>
 							<span>Copyright &copy; Midara</span> |{" "}
 							<span>
-								Versão Beta:{" "}
+								Beta version:{" "}
 								{`${process.env.NEXT_PUBLIC_APP_VERSION}`}
 							</span>
 						</div>

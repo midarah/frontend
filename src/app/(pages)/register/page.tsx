@@ -46,14 +46,14 @@ function Register() {
 
 	return (
 		<main className="h-screen flex flex-col justify-center items-center">
-			<h1 className="text-2xl">Cadastre-se</h1>
+			<h1 className="text-2xl">Register</h1>
 			<form className="w-1/4" onSubmit={handleSubmit}>
 				<Message />
 				<Input
-					text="Nome"
+					text="Name"
 					type="text"
 					name="name"
-					placeholder="Digite seu nome"
+					placeholder="Type your name"
 					handleOnChange={handleChange}
 					value={user.name}
 					multiple={false}
@@ -63,27 +63,27 @@ function Register() {
 					text="Email"
 					type="email"
 					name="email"
-					placeholder="Digite seu email"
+					placeholder="Type your email"
 					handleOnChange={handleChange}
 					value={user.email}
 					multiple={false}
 				/>
 
 				<Input
-					text="Senha"
+					text="Password"
 					type="password"
 					name="password"
-					placeholder="Digite sua senha"
+					placeholder="Type your password"
 					handleOnChange={handleChange}
 					value={user.password}
 					multiple={false}
 				/>
 
 				<Input
-					text="Confirmação de Senha"
+					text="Password Confirmation"
 					type="password"
 					name="confirmPassword"
-					placeholder="Confirme a sua senha"
+					placeholder="Confirm your password"
 					handleOnChange={handleChange}
 					value={user.confirmPassword}
 					multiple={false}
@@ -96,17 +96,17 @@ function Register() {
 							Loading...
 						</>
 					) : (
-						<>Cadastrar</>
+						<>Sign Up</>
 					)}
 				</button>
 			</form>
 
 			<span className="mt-2">
-				Já tem uma conta?{" "}
+				Already have an account?{" "}
 				<Link
 					className="text-blue-500 hover:text-blue-800 dark:text-blue-600 dark:hover:text-blue-400 transition-all ease-in duration-200 font-bold"
 					href="/login">
-					Faça Login
+					Login
 				</Link>
 			</span>
 

@@ -87,12 +87,18 @@ function SubscriptionPage() {
 	return (
 		<div className="h-screen container-fluid flex flex-col items-center mt-16">
 			<h1 className="pt-5 fw-bold text-2xl">
-				Escolha o Planos perfeito para você
+				Choose the Perfect Plans for You
 			</h1>
-			<h2 className="lead pb-4 text-xl">Assine um dos planos abaixo:</h2>
+			<h2 className="lead pb-4 text-xl">
+				Subscribe to one of the plans below:
+			</h2>
 			<h3>
-				※ Não se preocupe, a descrição na Fatura não irá mencionar o
-				conteúdo do site. Seremos discretos! ※
+				※ Don't worry, the description on the Invoice will not mention
+				the website content. We will be discreet! ※
+			</h3>
+			<h3>
+				※ Why do we charge a monthly fee?: This amount helps us keep the
+				site up and running! ※
 			</h3>
 			<div className="offset-md-3 col-md-6 flex flex-col items-center justify-center mt-8">
 				<div className="flex flex-row gap-8">

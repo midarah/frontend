@@ -130,7 +130,7 @@ function Navbar() {
 							<li
 								className="cursor cursor-pointer flex flex-row items-center hover:text-blue-300 transition-all ease-in duration-200 gap-1"
 								onClick={logout}>
-								<RxExit /> Sair
+								<RxExit /> Logout
 							</li>
 						</>
 					) : (
@@ -183,7 +183,7 @@ function Navbar() {
 									href="/register">
 									{" "}
 									<LuPenSquare />
-									Cadastrar
+									Sign Up
 								</Link>
 							</li>
 
@@ -193,7 +193,7 @@ function Navbar() {
 									href="/login">
 									{" "}
 									<LuLogIn />
-									Login{" "}
+									Sign In{" "}
 								</Link>
 							</li>
 						</>

@@ -88,7 +88,7 @@ function TagDetails() {
 							<hr className="w-full h-px bg-gray-200 border-0" />
 
 							<p className="mt-2 mb-3">
-								<strong>Definição:</strong> {tag.definition}
+								<strong>Definition:</strong> {tag.definition}
 							</p>
 						</div>
 					</div>
@@ -97,7 +97,7 @@ function TagDetails() {
 			<article className="grid grid-cols-10 mt-6 mb-10">
 				<div className="col-start-2 col-span-8 py-4 rounded-lg bg-pink-700">
 					<h1 className="text-center text-2xl">
-						Hentais com Tag {tag.tagName}
+						Hentais with Tag {tag.tagName}
 					</h1>
 				</div>
 
@@ -128,13 +128,13 @@ function TagDetails() {
 										</h2>
 									</div>
 									<Link
-										className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white p-2 rounded px-14 w-64"
+										className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white text-center p-2 rounded px-14 w-64"
 										href={
 											hentai.format == "Manga"
 												? `/mangas/${hentai._id}`
 												: `/doujinshis/${hentai._id}`
 										}>
-										Página do Hentai
+										Hentai Page
 									</Link>
 								</div>
 							);

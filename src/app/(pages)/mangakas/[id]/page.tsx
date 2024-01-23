@@ -11,6 +11,7 @@ import { useRouter } from "next/navigation";
 // React Icons
 import { RiBook2Fill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 // Components
 import { Spinner } from "@/components/Spinner";
@@ -87,7 +88,7 @@ function MangakaDetails() {
 								<hr className="w-full h-px bg-gray-200 border-0" />
 
 								<p className="mt-2 mb-3 text-white">
-									<strong>Informações:</strong>{" "}
+									<strong>Informations:</strong>{" "}
 									{mangaka.information}
 								</p>
 							</div>
@@ -95,9 +96,9 @@ function MangakaDetails() {
 
 						<Link
 							target="_BLANK"
-							className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white p-2 rounded px-14 w-64 mb-4 flex flex-row justify-center items-center gap-4 shadow-md"
+							className="bg-black hover:bg-gray-900 transition-all ease-in duration-200 text-white p-2 rounded px-14 w-64 mb-4 flex flex-row justify-center items-center gap-4 shadow-md"
 							href={mangaka.twitter}>
-							<FaTwitter size={20} />
+							<FaXTwitter size={20} />
 							Twitter
 						</Link>
 					</div>
@@ -106,7 +107,7 @@ function MangakaDetails() {
 			<article className="grid grid-cols-10 mt-6 mb-10">
 				<div className="col-start-2 col-span-8 py-4 rounded-lg bg-pink-700 shadow-lg">
 					<h1 className="text-center text-white text-2xl">
-						Mangas e Doujinshis de {mangaka.mangakaName}
+						Mangas and Doujinshis from {mangaka.mangakaName}
 					</h1>
 				</div>
 
@@ -133,13 +134,13 @@ function MangakaDetails() {
 										</h3>
 									</div>
 									<Link
-										className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white p-2 rounded px-14 w-64 shadow-lg"
+										className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white text-center p-2 rounded px-14 w-64 shadow-lg"
 										href={
 											hentai.format == "Manga"
 												? `/mangas/${hentai._id}`
 												: `/doujinshis/${hentai._id}`
 										}>
-										Página do Hentai
+										Hentai Page
 									</Link>
 								</div>
 							);

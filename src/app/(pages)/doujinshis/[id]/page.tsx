@@ -121,7 +121,7 @@ function DoujinshiDetails() {
 							<hr className="w-full h-px bg-gray-200 border-0" />
 
 							<p className="mt-2 mb-3 text-white">
-								<strong>Sinopse:</strong> {hentai.description}
+								<strong>Synopsis:</strong> {hentai.description}
 							</p>
 
 							<h2 className="mb-2 text-white">
@@ -165,8 +165,7 @@ function DoujinshiDetails() {
 							</h2>
 
 							<h2 className="text-white">
-								<strong>Status do Projeto:</strong>{" "}
-								{hentai.status}
+								<strong>Project Status:</strong> {hentai.status}
 							</h2>
 						</div>
 					</div>
@@ -176,7 +175,7 @@ function DoujinshiDetails() {
 			<article className="grid grid-cols-10 mt-6 mb-10">
 				<div className="col-start-2 col-span-8 py-4 rounded-lg bg-pink-700">
 					<h1 className="text-center text-white text-2xl">
-						Capítulos
+						Chapters
 					</h1>
 				</div>
 
@@ -208,7 +207,7 @@ function DoujinshiDetails() {
 									href={`/chapter/${chapter._id}`}
 									className="flex flex-row items-center justify-center w-64 rounded p-2 mt-2 bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 drop-shadow-md">
 									<BsBookHalf className="mr-3" size={20} />
-									Ler Online
+									Read Online
 								</Link>
 							</div>
 						))}
