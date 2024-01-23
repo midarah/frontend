@@ -28,7 +28,7 @@ function HomePage() {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			await api.get("https://api.midara.co/hentais").then((response) => {
+			await api.get("/hentais/").then((response) => {
 				setHentais(response.data.hentais);
 			});
 		};
