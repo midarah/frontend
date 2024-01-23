@@ -93,7 +93,7 @@ function SubscriptionPage() {
 				Subscribe to one of the plans below:
 			</h2>
 			<h3>
-				※ Don't worry, the description on the Invoice will not mention
+				※ Do not worry, the description on the Invoice will not mention
 				the website content. We will be discreet! ※
 			</h3>
 			<h3>
