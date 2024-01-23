@@ -29,14 +29,9 @@ interface IPropsChildren {
 
 export default function RootLayout({ children }: IPropsChildren) {
 	return (
-		<html lang="pt-BR">
+		<html lang="en-US">
 			<head>
-				<Link rel="icon" href="/favicon.png" type="image/png" />
-				<Link
-					href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
-					rel="stylesheet"
-					type="text/css"
-				/>
+				<link rel="icon" href="/favicon.png" type="image/png" />
 			</head>
 			<body className={poppins.className}>
 				<ThemeProvider enableSystem={true} attribute="class">
