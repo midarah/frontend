@@ -2,7 +2,7 @@
 
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import Link from "next/link";
+import Script from "next/script";
 // import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
@@ -32,6 +32,10 @@ export default function RootLayout({ children }: IPropsChildren) {
 		<html lang="en-US">
 			<head>
 				<link rel="icon" href="/favicon.png" type="image/png" />
+				<Script
+					src="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
+					strategy="beforeInteractive"
+				/>
 			</head>
 			<body className={poppins.className}>
 				<ThemeProvider enableSystem={true} attribute="class">
