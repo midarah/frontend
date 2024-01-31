@@ -41,7 +41,7 @@ export default function RootLayout({ children }: IPropsChildren) {
 					<UserProvider>
 						<Metadata
 							title="Midara Hentai"
-							description="Descrição global"
+							description="Midara Hentai is an online reader of high quality Doujinshi and Hentai Manga, focused on well-selected works by great authors, with image quality and many uncensored."
 						/>
 						<Navbar />
 						<Toaster
