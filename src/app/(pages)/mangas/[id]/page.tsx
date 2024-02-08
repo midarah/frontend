@@ -120,7 +120,7 @@ function MangaDetails() {
 							<hr className="w-full h-px bg-gray-200 border-0" />
 
 							<p className="mt-2 mb-3 text-white">
-								<strong>Sinopse:</strong> {hentai.description}
+								<strong>Synopsis:</strong> {hentai.description}
 							</p>
 
 							<h2 className="mb-2 text-white">
@@ -164,7 +164,7 @@ function MangaDetails() {
 							</h2>
 
 							<h2 className="text-white">
-								<strong>Status do Projeto:</strong>{" "}
+								<strong>Project Status:</strong>{" "}
 								{hentai.status}
 							</h2>
 						</div>
@@ -175,7 +175,7 @@ function MangaDetails() {
 			<article className="grid grid-cols-10 mt-6 mb-10">
 				<div className="col-start-2 col-span-8 py-4 rounded-lg bg-pink-700">
 					<h1 className="text-center text-white text-2xl">
-						Capítulos
+						Chapters
 					</h1>
 				</div>
 
