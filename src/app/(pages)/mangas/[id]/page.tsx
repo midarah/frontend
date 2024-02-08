@@ -207,7 +207,7 @@ function MangaDetails() {
 									href={`/chapter/${chapter._id}`}
 									className="flex flex-row items-center justify-center w-64 rounded p-2 mt-2 bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 shadow-lg">
 									<BsBookHalf className="mr-3" size={20} />
-									Ler Online
+									Read Online
 								</Link>
 							</div>
 						))}
