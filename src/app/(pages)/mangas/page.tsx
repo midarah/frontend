@@ -104,7 +104,7 @@ function Mangas() {
 									</div>
 									<Link
 										className="bg-blue-800 hover:bg-blue-600 transition-all ease-in duration-200 text-white text-center p-2 rounded px-14 shadow-lg"
-										href={`/doujinshis/${hentai._id}`}>
+										href={`/mangas/${hentai._id}`}>
 										Hentai Page
 									</Link>
 								</div>
